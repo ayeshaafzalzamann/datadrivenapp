@@ -208,6 +208,12 @@ b3.place(x=369, y=0 , width=30 , height=30)
 l1=Label(frame2, text="App Information",font=("Instrument Serif",20))
 l1.place(x=110,y=40)
 
+b4 = Button(frame2, text="information by code",font=('Arial',9),fg="white", bg="#203354",
+             command=page3)
+b5 = Button(frame2, text="get info from region", font=('Arial',9),fg="white", bg="#203354", command=page4)
+b4.place(x=50, y=500, width=130 , height=30)
+b5.place(x=250, y=500 , width=150 , height=30)
+
 
 #creating another frame for text
 l2=Label(frame2,text="Welcome to explore world application.\n This application is based on countries api which \nallow user to access the data of the countries.\nThe user have to select the country code to display \nthe information",font=30)
@@ -223,12 +229,12 @@ imgframe3=ImageTk.PhotoImage(Image.open("exploring world (1).png"))
 imglabel= Label(frame3, image=imgframe3)
 imglabel.place(x=0,y=0, width=400 , height=600)
 
-b4 = Button(frame3, text="🢦",font=('Arial',25),fg="white", bg="#8B4513",
+b6 = Button(frame3, text="🢦",font=('Arial',25),fg="white", bg="#8B4513",
              command=page2)
-b4.place(x=0, y=0, width=30 , height=30)
+b6.place(x=0, y=0, width=30 , height=30)
 
-b5 = Button(frame3, text="➡", font=('Arial', 19), fg="white", bg="#8B4513", command=page4)
-b5.place(x=369, y=0, width=30, height=30)
+b7 = Button(frame3, text="➡", font=('Arial', 19), fg="white", bg="#8B4513", command=page4)
+b7.place(x=369, y=0, width=30, height=30)
 
 label=Label(frame3, text="Select code to get countries",font=("Instrument Serif",12))
 label.place(x=110,y=30)
@@ -258,8 +264,6 @@ result_label.place(x=70 ,y=150)
 # Flag display
 flag_label = tk.Label(frame3)
 flag_label.pack(pady=150)
-
-
 
 frame3.place(x=0 ,y= 0,height=600,width=400)
 
